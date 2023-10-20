@@ -7,26 +7,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Colors</title>
   </head>
-  <body>
+  <body class="mx-4">
     <!-- Default colors -->
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <h2 class="my-4 font-bold">Text Colors</h2>
+    <p class="text-black">Tailwind is awesome!</p>
+    <p class="text-white bg-black">Tailwind is awesome!</p>
+    <br />
+    <p class="text-red-500">red text</p>
+    <p class="text-green-500">green text</p>
+    <p class="text-lime-500">lime text</p>
+    <p class="text-blue-500">blue text</p>
+    <p class="text-indigo-500">indigo text</p>
+    <p class="text-purple-500">purple text</p>
+    <p class="text-slate-500">slate text</p>
+    <p class="text-gray-500">gray text</p>
+    <p class="text-neutral-500">neutral text</p>
+    <p class="text-stone-500">stone text</p>
 
-    <!-- Background Colors -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Background Colors</h2>
+    <p class="bg-red-500/40">red bg - (/40 refers opacity %)</p>
+    <p class="bg-teal-300">teal bg</p>
+    <p class="bg-stone-500">stone bg</p>
+    <p class="bg-slate-500">slate bg</p>
 
-    <!-- Text Underline -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Text Underline</h2>
+    <p class="underline decoration-red-500">green bg</p>
+    <p class="underline decoration-teal-300">teal bg</p>
+    <p class="underline decoration-stone-500">stone bg</p>
+    <p class="underline decoration-slate-500">slate bg</p>
 
-    <!-- Border Colors -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Border Colors</h2>
+    <p class="border boder-red-500">green bg</p>
+    <p class="border boder-teal-300">teal bg</p>
+    <p class="border boder-stone-500">stone bg</p>
+    <p class="border boder-slate-500">slate bg</p>
+    <br />
+    <input type="text" class="border border-red-500 text-red-500" value="red" />
+    <input type="text" class="border border-green-500" value="green" />
+    <input type="text" class="border border-slate-500" value="slate" />
+    <input type="text" class="border border-neutral-500" value="neutral" />
 
-    <!-- Divide Colors -->
+    <hr />
+    <h2 class="my-4 font-bold">Divide Colors</h2>
+    <p>Border in between divs.. divider!</p>
+    <div class="divide-y divide-red-300">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+    </div>
 
-    <!-- Outline Colors -->
+    <hr />
+    <h2 class="my-4 font-bold">Outline Colors</h2>
+    <button class="outline outline-red-500 p-1">Submit</button>
+    <button class="outline outline-blue-500 p-2 mx-2">Submit</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Box Shadow Colors</h2>
+    <div class="shadow-lg bg-cyan-500 shadow-purple-500/60">
+      Subscribe (decrease opacity)
+    </div>
+    <br />
+    <button class="shadow-lg bg-cyan-500 shadow-cyan-800">Subscribe</button>
 
-    <!-- Accent Colors -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Accent Colors</h2>
+    <input type="checkbox" class="accent-red-500" />
+    <br />
+    <input type="checkbox" class="accent-purple-500" checked />
 
-    <!-- Arbitrary Colors -->
+    <hr />
+    <h2 class="my-4 font-bold">Arbitrary Colors</h2>
+    <p>The ones that we create on the fly!</p>
+    <div class="bg-[#f0f0f0] my-2">xxx</div>
+    <div class="bg-[rgba(255,0,0,0.4)] my-2">xxx</div>
+    <div class="bg-[steelblue] my-2">xxx</div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
