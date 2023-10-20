@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,14 +7,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Backgrounds & Shadows</title>
   </head>
-  <body>
+  <body class="mx-4">
     <!-- Background Classes -->
+    <h2 class="my-4 font-bold">Background Classes</h2>
+    <div
+      class="h-64 w-72 bg-no-repeat bg-cover bg-center bg-red-500"
+      style="background-image: url('../assets/img/img1.jpg')"
+    ></div>
 
     <!-- Gradients -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Gradients</h2>
+    <div
+      class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-center p-4"
+    >
+      <h3>Beyaz yazı ister misiniz?</h3>
+      <p>Yes - isteriz...</p>
+    </div>
 
     <!-- Shadows -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Shadows</h2>
+    <div class="w-96 mt-6 ml-4 p-3 shadow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, qui
+      illum suscipit aut pariatur
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-lg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, qui
+      illum suscipit aut pariatur
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-blue-500">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, qui
+      illum suscipit aut pariatur
+    </div>
 
     <!-- Mix Blend -->
+    <br />
+    <hr />
+    <h2 class="my-8 font-bold">Mix Blend</h2>
+    <p>Never used... but it is in documentation!</p>
+    <div class="flex justify-center -space-x-24">
+      <div class="mix-blend-multiply bg-blue-400">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
+        itaque.
+      </div>
+      <div class="mix-blend-multiply bg-pink-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi.
+        Sapiente soluta maxime quibusdam alias.
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
 
