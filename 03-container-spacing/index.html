@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Container & Spacing</title>
   </head>
-  <body>
+  <body class="mx-4">
     <!-- Container -->
-    <div>
+    <div class="container mx-auto">
       <article>
         <h3>Article One</h3>
         <p>
@@ -20,14 +20,57 @@
         </p>
       </article>
 
-      <!-- Margin -->
+      <br />
+      <hr />
+      <h2 class="my-4 font-bold">Margin</h2>
+      <div class="bg-slate-100 m-2">Margin 2</div>
+      <div class="bg-slate-100 ml-10">Margin Left 10</div>
+      <div class="bg-slate-100 mx-0.5">Margin X 0.5</div>
+      <div class="bg-slate-100">Margin None</div>
+      <div class="bg-green-100 ml-[20px]">
+        Margin Left 20px arbitrary - not adviced (last alternative)
+      </div>
 
-      <!-- Padding -->
+      <br />
+      <hr />
+      <h2 class="my-4 font-bold">Padding</h2>
+      <div class="bg-slate-100 p-2">Margin 2</div>
+      <div class="bg-slate-100 p-10">Margin Left 10</div>
+      <div class="bg-slate-100 px-0.5">Margin X 0.5</div>
+      <div class="bg-slate-100">Margin None</div>
+      <div class="bg-green-100 pl-[20px]">
+        Margin Left 20px arbitrary - not adviced (last alternative)
+      </div>
 
-      <!-- Space Between X -->
+      <br />
+      <hr />
+      <h2 class="my-4 font-bold">Space Between X</h2>
+      <div class="flex space-x-4">
+        <div class="border p-2">Item 1</div>
+        <div class="border border-red-400 p-2">Item 2</div>
+        <div class="border p-2">Item 3</div>
+        <div class="border border-blue-400 p-2">Item 4</div>
+        <div class="border p-2">Item 5</div>
+        <div class="border border-green-400 p-2">Item 6</div>
+      </div>
 
       <!-- Space Between Y -->
+      <br />
+      <hr />
+      <h2 class="my-4 font-bold">Space Between Y</h2>
+      <div class="flex flex-col space-y-4">
+        <div class="border p-2">Item 1</div>
+        <div class="border border-red-400 p-2">Item 2</div>
+        <div class="border p-2">Item 3</div>
+        <div class="border border-blue-400 p-2">Item 4</div>
+        <div class="border p-2">Item 5</div>
+        <div class="border border-green-400 p-2">Item 6</div>
+      </div>
     </div>
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
 
