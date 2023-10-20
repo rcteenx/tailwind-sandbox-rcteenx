@@ -7,30 +7,134 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TailwindCSS</title>
   </head>
-  <body>
+  <body class="px-2">
     <!-- Positioning -->
+    <h2 class="my-4 font-bold">Positioning</h2>
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Top left corner</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute top-0 left-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Top right corner -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Top right corner</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute top-0 right-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom left corner -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Bottom left corner</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute bottom-0 left-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom right corner -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Bottom right corner</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute bottom-0 right-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span top edge -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Span top edge</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">
+        <p>Inset-x-0: left, right:0px;</p>
+      </div>
+    </div>
 
     <!-- Span left edge -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Span left edge</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span right edge -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Span right edge</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Span top edge</h2>
+    <div class="relative w-32 h-32 bg-yellow-100">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Display Classes -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Display Classes</h2>
+    <p>
+      Lorem ipsum <span class="inline font-bold">Inline</span>dolor sit amet
+      consectetur
+      <span class="inline-block font-bold">Inline-block</span>adipisicing elit.
+      Magni velit dolores sequi cupiditate vel, aspernatur
+      <span class="block font-bold">block</span>dolorem ad, quasi facere,
+      exercitationem itaque nobis similique temporibus deserunt ut doloremque
+      optio aliquid quos! Veniam aperiam unde ratione explicabo reprehenderit!
+      Consequuntur incidunt laborum voluptate, amet laboriosam officia quae
+      aperiam, hic nisi, error id omnis modi ducimus quibusdam? Minima deserunt,
+      repellendus quae odio natus voluptate?<span class="hidden font-bold"
+        >hidden</span
+      >
+    </p>
 
     <!-- Z-Index -->
-
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Z-Index</h2>
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-100 z-40">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-200 z-0">2</div>
+      <div class="absolute left-40 w-24 h-24 bg-blue-300 z-10">3</div>
+      <div class="absolute left-60 w-24 h-24 bg-blue-400 z-20">4</div>
+      <div class="absolute left-80 w-24 h-24 bg-blue-500 z-30">5</div>
+    </div>
     <!-- Floats -->
+    <br />
+    <hr />
+    <h2 class="my-4 font-bold">Floats</h2>
+    <div class="w-1/2">
+      <img
+        class="w-24 h-24 float-left mr-2"
+        src="../assets/img/img1.jpg"
+        alt="image 1"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error enim
+        laudantium facere fuga est sit nulla! Architecto corrupti placeat quos
+        perferendis blanditiis animi asperiores saepe soluta magni voluptas?
+        Perspiciatis, aliquid?
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
 
