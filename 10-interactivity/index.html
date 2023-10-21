@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,27 +7,131 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Interactivity</title>
   </head>
-  <body>
+  <body class="mx-4">
     <!-- Hover State Styling -->
+    <h2 id="h2Hover" class="my-4 font-bold">Hover State Styling</h2>
+    <button
+      class="bg-black text-white py-3 px-5 rounde-lg hover:bg-orange-500 hover:text-yellow-100"
+    >
+      Click - Hover
+    </button>
+    <a href="#h2Smooth">Go Bottom!</a>
 
     <!-- Focus State Styling -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Focus State Styling</h2>
+    <button
+      class="bg-black text-white py-3 px-5 rounde-lg focus:bg-orange-500 focus:text-yellow-100"
+    >
+      Click - Hover
+    </button>
 
     <!-- Active State Styling -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Active State Styling</h2>
+    <button
+      class="bg-black text-white py-3 px-5 rounde-lg active:bg-orange-500 active:text-yellow-100"
+    >
+      Click - Hover
+    </button>
 
     <!-- Styling based on parent state -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Styling based on parent state</h2>
+    <a
+      href="#"
+      class="group block max-w-xs max-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+    >
+      <h3 class="group-hover:text-white">Card Title</h3>
+      <p class="group-hover:text-yellow-500">This is the card description...</p>
+    </a>
 
     <!-- Pseudo Classes -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Pseudo Classes</h2>
+    <ul>
+      <li class="even:bg-green-500 odd:text-white first:bg-red-200">
+        Item 1 - odd: first: e öncelik kazanıyor!
+      </li>
+      <li
+        class="first:bg-red-200 even:bg-green-500 odd:bg-black odd:text-white"
+      >
+        Item 2 - Not here!
+      </li>
+      <li
+        class="first:bg-red-200 even:bg-green-500 odd:bg-black odd:text-white"
+      >
+        Item 3
+      </li>
+      <li
+        class="first:bg-red-200 even:bg-green-500 odd:bg-black odd:text-white"
+      >
+        Item 4
+      </li>
+      <li
+        class="first:bg-red-200 even:bg-green-500 odd:bg-black odd:text-white"
+      >
+        Item 5
+      </li>
+      <li class="even:bg-green-500 odd:text-white">Item 6</li>
+    </ul>
 
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Appearance</h2>
+    <select>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <p>"appearance-none" durumunda dropdown kutucuğu hiç görünmüyor...</p>
+    <select class="appearance-none">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
 
     <!-- Cursor -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Cursor</h2>
+    <p class="cursor-pointer">cursor-pointer</p>
+    <p class="cursor-wait">cursor-wait</p>
+    <p class="cursor-alias">cursor-alias</p>
+    <p class="cursor-cell">cursor-cell</p>
+    <p class="cursor-col-resize">cursor-col-resize</p>
+    <p class="cursor-context-menu">cursor-context-menu</p>
+    <p class="cursor-copy">cursor-copy</p>
+    <p class="cursor-not-allowed">cursor-not-allowed</p>
+    <p class="cursor-vertical-text">cursor-vertical-text</p>
+    <p class="cursor-zoom-in">cursor-zoom-in</p>
 
     <!-- Resize -->
 
     <!-- User Select -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">User Select</h2>
+    <p class="select-auto">Select auto</p>
+    <p class="select-all">Select all</p>
+    <p class="select-none">Select none</p>
+    <p class="select-text">Select text</p>
 
     <!-- Smooth Scroll Example -->
+    <br /><br />
+    <hr />
+    <h2 id="h2Smooth" class="my-4 font-bold">Smooth Scroll Example</h2>
+    <a href="#h2Hover" class="block my-6">Go Top</a>
+    <p>html tag class - "scroll-smooth"</p>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
 
