@@ -1,14 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
+
+<!-- <html lang="en" class="dark"> -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Change dark-light mode from config
+      // after this, local operating system settings does not work
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <style>
+      .toggle-checkbox:checked {
+        right: 0;
+        border-color: #36d391;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background: #36d391;
+      }
+    </style>
     <title>Dark Mode</title>
   </head>
   <body>
-    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+    <div
+      class="container mx-auto mt-10 rounded-xl bg-white px-6 py-8 shadow-xl dark:bg-slate-900"
+    >
+      <h3 class="tracking-light font-medium text-slate-900 dark:text-white">
+        Lorem ipsum dolor sit
+      </h3>
+      <p class="mt-2 text-sm text-slate-900 dark:text-slate-400">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+        esse fugiat voluptate dolores asperiores pariatur, eum vel commodi
+        deserunt aut.
+      </p>
+    </div>
+
+    <div
+      class="relative ml-6 mr-2 mt-6 inline-block w-10 select-none align-middle transition duration-200 ease-in"
+    >
+      <input
+        type="checkbox"
+        name="toggle"
+        id="toggle"
+        class="toggle-checkbox absolute block h-6 w-6 cursor-pointer appearance-none rounded-full border-4 bg-white"
+      />
+      <label
+        for="toggle"
+        class="toggle-label block h-6 cursor-pointer overflow-hidden rounded-full bg-gray-300"
+      ></label>
+    </div>
+
+    <script>
+      document.getElementById("toggle").addEventListener("change", function () {
+        if (this.checked) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
   </body>
 </html>
 
