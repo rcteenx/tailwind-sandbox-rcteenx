@@ -5,21 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionDuration: {
+              2000: "2000ms",
+            },
+          },
+        },
+      };
+    </script>
     <title>Transform & Transition</title>
   </head>
   <body>
     <!-- No Transition -->
+    <h2 class="my-4 font-bold">No Transition</h2>
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
+      class="px-8 py-2 mx-4 text-white bg-blue-500 rounded hover:bg-blue-700"
     >
       Click me
     </button>
 
     <!-- Transition -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Transition</h2>
+    <button
+      class="px-8 py-2 mx-4 text-white bg-blue-500 rounded hover:bg-blue-700 transition-colors duration-300"
+    >
+      Click me - Just Color
+    </button>
+    <button
+      class="px-8 py-2 mx-4 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transition duration-1000"
+    >
+      Click me - Opacity + Color
+    </button>
 
     <!-- Transition & Transform -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Transform</h2>
+    <button
+      class="px-8 py-2 mx-4 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 rotate-3 transition duration-1000"
+    >
+      Click me
+    </button>
+    <br /><br />
+    <img
+      class="w-48 hover:scale-90 transition duration-1000"
+      src="../assets/img/img1.jpg"
+      alt="1000 ms"
+    /><img
+      class="w-48 hover:scale-90 transition duration-2000"
+      src="../assets/img/img1.jpg"
+      alt="2000 ms"
+    />
 
     <!-- Transform & Transition -->
+    <br /><br />
+    <hr />
+    <h2 class="my-4 font-bold">Transform & Transition</h2>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br />
+    <h3>Finish!</h3>
   </body>
 </html>
 
